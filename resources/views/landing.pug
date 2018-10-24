@@ -1,0 +1,10 @@
+html
+  head
+    title= title
+  body
+    .splash= splash
+    form(action='/crypter', method='GET')
+      p
+        |   message: 
+        input(class='message' name='inputMessage', value='', type='text')
+      input(value='Encrypt', type='submit')
